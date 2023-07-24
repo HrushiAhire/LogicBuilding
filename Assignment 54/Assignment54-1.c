@@ -4,7 +4,7 @@ void Display(int iNo)
 {
     if(iNo >= 1)
     {
-        printf("%d\t", iNo);
+        printf("%d\t*\t", iNo);
         iNo--;
         Display(iNo);
     }
@@ -18,9 +18,10 @@ int main()
 {
     int iValue = 0;
 
-    printf("Enter the number : \n");
-    scanf("%d", &iValue);
+    printf("Enter the number\n");
+    scanf("%d",&iValue);
 
     Display(iValue);
+
     return 0;
 }
